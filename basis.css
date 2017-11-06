@@ -8,3 +8,12 @@
     border: solid green 2px;
     padding:10px;
 }
+#bil {
+    background-image: url("bil.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:21%;
+    height: 51%;
+    border: solid rgb(128, 0, 0) 2px;
+    padding:10px;
+}
