@@ -16,4 +16,14 @@
     height: 51%;
     border: solid rgb(128, 0, 0) 2px;
     padding:10px;
-}
+
+} 
+#bakgrun {
+    background-image: url("bakgrun.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+    height: 100%;
+    border: solid green 2px;
+    padding:10px;
+} 
