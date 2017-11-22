@@ -36,14 +36,3 @@
     30% { top:30%; left:226%; }
     60% { top:20%; left:46%; }
     100% { top:10%; left:76%; }
-}
-#snoop {
-    position: absolute;
-    left:40%;
-    top:10%;
-    width: 160px;
-    height: 160px;
-    background-image: url("julenissen.JPEG.png");
-    background-size: 150px;
-    background-repeat: no-repeat;
-}
