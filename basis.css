@@ -19,13 +19,13 @@
     padding:10px;
 } 
 
-#snoop {
+#snoopy {
     position: absolute;
     left:6%;
     top:36%;
     width: 160px;
     height: 160px;
-    background-image: url("snoopy.png");
+    background-image: url("jul.png");
     background-size: 150px;
     background-repeat: no-repeat;
     animation: walk 3s alternate infinite linear;
