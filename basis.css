@@ -28,7 +28,7 @@
     background-image: url("snoop.png");
     background-size: 150px;
     background-repeat: no-repeat;
-    animation: walk 3s alternate infinite linear;
+    /*animation: walk 3s alternate infinite linear;*/
 }
 
 @keyframes walk {
@@ -36,3 +36,9 @@
     30% { top:30%; left:226%; }
     60% { top:20%; left:46%; }
     100% { top:10%; left:76%; }
+}
+
+video {
+    background-color: green;
+    margin: 50px;
+}
