@@ -5,49 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+    <script src="chatty.js"></script>
     <title>Document</title>
 </head>
 
 <body>
-    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
-    <script>
-        // Initialize Firebase
-        var config = {
-            apiKey: "AIzaSyBjtK8SqZSsVRocQ0sRxjpnRU5qMtU2Pjc",
-            authDomain: "chat-76e23.firebaseapp.com",
-            databaseURL: "https://chat-76e23.firebaseio.com",
-            projectId: "chat-76e23",
-            storageBucket: "",
-            messagingSenderId: "904833647965"
-        };
-        firebase.initializeApp(config);
-    </script>
+   
     <h1>navn______________tekst </h1>
     <form  id="regMelding">
         <input type="text" id="inpNavn">
         <input type="text" id="inpTekst">
         <button type="submit">Legg inn melding</button>
     </form>
-    <section id="visMeldinger"></section>
+    <ol id="visMeldinger"></ol>
+
     <script>
-      var regMelding = document.getElementById("regMelding");
-      var inpNavn = document.getElementById("inpNavn");
-      var inpTekst = document.getElementById("inpTekst");
-      var visMeldinger = document.getElementById("visMeldinger");
-      var database = firebase.database();
-      var ref = database.ref("meldinger");
-      regMelding.onsubmit = function(evt) {
-          evt.preventDefault();
-          ref.push({
-              navn:inpNavn.value,
-              tekst:inpTekst.value
-          });
-      }
-      ref.on("child_added", function(snapshot) {
-          var melding = snapshot.val();
-          visMeldinger.innerHTML += `<div>${melding.navn} sier 
-          <i>${melding.tekst}</i>`;
-      });
+      setup();
     </script>
 
 </body>
